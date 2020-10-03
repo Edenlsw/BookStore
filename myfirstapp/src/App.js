@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 function App() {
   // inline style
   const h1style = {"fontSize": "100px", "color": "#a6b1e1", "textDecoration": "underline", "textDecoration": "uppercase"}
@@ -24,6 +25,9 @@ function App() {
         >
           Learn React
         </a> */}
+
+
+
       </header>
     </div>
   );
