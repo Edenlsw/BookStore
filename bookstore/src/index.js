@@ -7,24 +7,80 @@ style: 'currency',
 currency: 'GBP'
 })
 
-function allBooks() {
-  let elements = []
-
-  for (i = 0; i < books.length; i++)
-const book = books[0];
-
-let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice: {amount}}} = book;
 
 const element = <Fragment>
-<h1 id={id}>{title} = {formatter.format(amount)}</h1>
+  {books.map((book) => {
+    let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice} = book,
+    return (<div>
+      <p>{title}, {authors}</p>
+      </div>)
+  })}
 </Fragment>;
 
-elements.push(element)
-}
-return element
+ReactDOM.render(element,document.getElementById('root'));
 
 
-ReactDOM.render(allbooks(),document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+// const book = books[0];
+// let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice: {amount}}} = book;
+// const element = <Fragment>
+// <h1 id={id}>{title} = {formatter.format(amount)}</h1>
+// </Fragment>;
+// ReactDOM.render(element,document.getElementById('root'));
+
+
+
+// copied content for task 
+
+// const book = books[0];
+// let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice: {amount}}} = book;
+// const element = <Fragment>
+// <h1 id={id}>{title} = {formatter.format(amount)}</h1>
+// </Fragment>;
+// ReactDOM.render(element,document.getElementById('root'));
+
+
+
+
+
+
+// session work unsure about 
+
+// import React, {Fragment} from 'react';
+// import ReactDOM from 'react-dom';
+// import books from './books.json';
+
+// const formatter = new Intl.NumberFormat('en-GB', {
+// style: 'currency',
+// currency: 'GBP'
+// })
+
+// function allBooks() {
+//   let elements = []
+
+//   for (i = 0; i < books.length; i++)
+// const book = books[0];
+
+// let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice: {amount}}} = book;
+
+// const element = <Fragment>
+// <h1 id={id}>{title} = {formatter.format(amount)}</h1>
+// </Fragment>;
+
+// elements.push(element)
+// }
+// return element
+
+
+// ReactDOM.render(allbooks(),document.getElementById('root'));
 
 
 
