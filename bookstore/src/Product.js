@@ -9,6 +9,7 @@ function Product (props) {
             <p>{props.price}</p>
             <p>{props.description}</p>
             <img src={props.src} alt={props.alt}/>
+            <p><button></p>
             
            
            

@@ -9,8 +9,9 @@ currency: 'GBP'
 
 
 const element = <Fragment>
+  
   {books.map((book) => {
-    let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice} = book,
+    let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice} }= book;
     return (<div>
       <p>{title}, {authors}</p>
       </div>)
