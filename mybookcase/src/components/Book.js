@@ -1,0 +1,57 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+
+
+const Book = (props) => {
+    let {
+        
+         volumeInfo: { id, title, authors, description,  imageLinks: {thumbnail, smallThumbnail}},
+        saleInfo: {listPrice}
+        // remove amount line
+    } = props.book;
+
+
+        
+    return (
+        <div>
+            <h2>{title}</h2>
+            <p>by {authors ? authors.join(', '): 'No Authors'}</p>
+            <p>£ {listPrice && listPrice.amount}</p>
+            <p>{description}</p>
+            <img src={smallThumbnail || thumbnail}/>
+            <button onClick={() => props.addBook(title, id)}>Add</button>
+        </div>
+    );
+}
+
+
+Book.propTypes = {
+    book: PropTypes.shape({
+        id: PropTypes.string, 
+        volumeInfo: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            authors: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            imageLinks: PropTypes.shape({
+                smallThumbnail: PropTypes.string
+            })
+        }),
+        
+        saleInfo: PropTypes.shape({
+            listPrice: PropTypes.shape({
+                amount: PropTypes.number.isRequired
+            })
+        })
+
+        
+    })
+
+}
+
+
+
+
+
+
+export default Book;
