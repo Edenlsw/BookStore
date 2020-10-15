@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 
 const Book = (props) => {
     let {
-        
-         volumeInfo: { id, title, authors, description,  imageLinks: {thumbnail, smallThumbnail}},
+        id,
+         volumeInfo: { title, authors, description,  imageLinks: {thumbnail, smallThumbnail}},
         saleInfo: {listPrice}
         // remove amount line
     } = props.book;
