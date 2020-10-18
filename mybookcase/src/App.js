@@ -7,6 +7,7 @@ import Header from './components/Header';
 import BookList  from './components/BookList.js';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Apps.css"
 
 
 const App = (props) => {
@@ -22,6 +23,11 @@ const App = (props) => {
     setBooks(newBookList);
     setBookcase(chosenBook);
     console.log(`The Book ${title} was clicked`);
+    }
+
+    function removeBook(id) {
+      const newBookcaseList = bookcase.filter((book) => book.id !== id); 
+      setBookcase(newBookcaseList);
     }
 
 
@@ -49,7 +55,7 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
-        <BookList books={bookcase} /> 
+        <BookList books={bookcase} removeBook={removeBook}/> 
       </React.Fragment>
     )} />
 

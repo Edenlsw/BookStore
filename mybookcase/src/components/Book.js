@@ -11,7 +11,7 @@ const Book = (props) => {
         // remove amount line
     } = props.book;
 
-
+ 
         
     return (
         <div>
@@ -20,7 +20,17 @@ const Book = (props) => {
             <p>£ {listPrice && listPrice.amount}</p>
             <p>{description}</p>
             <img src={smallThumbnail || thumbnail}/>
-            <button onClick={() => props.addBook(title, id)}>Add</button>
+            {props.addBook && (
+                <button 
+                onClick={() => props.addBook(title, id)}>Add
+                </button>
+            )}
+            {props.removeBook && (
+                <button 
+                onClick={() => props.removeBook(id)}>Remove
+                </button>
+            )}
+            
         </div>
     );
 }

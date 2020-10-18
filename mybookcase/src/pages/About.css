@@ -1,0 +1,32 @@
+.title-about {
+    color: #fca652;
+    font-size: 30px;
+}
+
+.description-about {
+    margin: 50px 100px 50px 100px;
+    color: black;
+}
+
+.eden {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.title {
+    text-decoration: underline;
+    color: #ac4b1c;
+    text-transform: uppercase;
+}
+
+
+.search-form {
+    color: orange;
+}
+
+
+
+*{
+    text-align: center;
+    background-color: #ffefa0;
+}
