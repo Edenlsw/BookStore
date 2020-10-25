@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import BookCounter from './BookCounter';
 
 
 const Book = (props) => {

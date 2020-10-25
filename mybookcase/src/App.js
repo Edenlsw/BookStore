@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Book from './components/Book';
 import About from './pages/About';
@@ -8,6 +8,7 @@ import BookList  from './components/BookList.js';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Apps.css"
+import BookCounter from './components/BookCounter';
 
 
 const App = (props) => {
