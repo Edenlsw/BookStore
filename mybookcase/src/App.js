@@ -8,7 +8,7 @@ import BookList  from './components/BookList.js';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Apps.css"
-import BookCounter from './components/BookCounter';
+// import BookCounter from './components/BookCounter';
 
 
 const App = (props) => {
@@ -16,21 +16,40 @@ const App = (props) => {
   const [books, setBooks] = useState(data);
   const [ keyword, setKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
+  const [count, setCount] = useState(0);
+
+  useEffect (() => {
+    document.title = `${count} Book(s) Added To Bookcase`
+  });
+
+
 
   function addBook(title, id) {
     const newBookList = books.filter((book) => book.id !== id);
     const chosenBook = books.filter((book) => book.id === id);
     console.log(newBookList)
     setBooks(newBookList);
-    setBookcase(chosenBook);
+    setBookcase([...bookcase, ... chosenBook]);
     console.log(`The Book ${title} was clicked`);
+    setCount(count +1);
     }
 
     function removeBook(id) {
       const newBookcaseList = bookcase.filter((book) => book.id !== id); 
       setBookcase(newBookcaseList);
+      setCount(count -1);
     }
 
+   
+
+
+//   useEffect (() => {
+//     document.title = bookcase.length === 0
+//         ? "Any Text here"
+//         : `Added ${bookcase.length}`;
+// });
+
+    
 
     async function findBooks (term) {
       const results = await fetch (
@@ -39,6 +58,7 @@ const App = (props) => {
 
     }
 
+    
 
   return (
     <>
@@ -56,7 +76,12 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
-        <BookList books={bookcase} removeBook={removeBook}/> 
+        {/* <h3>Welcome to the BookCase</h3> */}
+            {/* <BookCounter library={{name:"Eden", theme:"Modern"}}/> */}
+        <BookList books={bookcase} removeBook={removeBook}/>
+        {/* testing book count  */}
+            
+      
       </React.Fragment>
     )} />
 
@@ -66,6 +91,7 @@ const App = (props) => {
         <About/>  
       </React.Fragment>
     )} />
+
 
     </Router> 
     </>

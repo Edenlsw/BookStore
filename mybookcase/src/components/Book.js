@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { Fragment, useState} from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import BookCounter from './BookCounter';
+
+import App from '../App';
+
+
+
 
 
 const Book = (props) => {
@@ -11,19 +16,22 @@ const Book = (props) => {
         // remove amount line
     } = props.book;
 
- 
-        
+  
+    
+   
+    
     return (
         <div>
             <h2>{title}</h2>
+            
             <p>by {authors ? authors.join(', '): 'No Authors'}</p>
             <p>£ {listPrice && listPrice.amount}</p>
             <p>{description}</p>
             <img src={smallThumbnail || thumbnail}/>
             {props.addBook && (
                 <button 
-                onClick={() => props.addBook(title, id)}>Add
-                </button>
+            onClick={() => props.addBook(title, id)} > Add </button>
+                
             )}
             {props.removeBook && (
                 <button 
@@ -58,7 +66,6 @@ Book.propTypes = {
     })
 
 }
-
 
 
 

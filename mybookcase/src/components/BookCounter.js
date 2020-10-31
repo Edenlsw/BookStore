@@ -1,20 +1,19 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 
 
-const BookCounter = (props) => {
+// const BookCounter = (props) => {
 
-  const [count, setCount] = useState(0);
+//   const [count, setCount] = useState(0);
 
-  return (
-    <div className="booklist">
-    <h1>{props.library.name}'s Books ({count})	&#8595;</h1>
-    <button 
-      onClick={() => setCount(count + 1)}>Count Books</button>
+//   return (
+//     <div className="booklist">
+//     { <h1 className="count-display">{props.library.name}'s Books {count}</h1> }
+//     { <button onClick={() => setCount(count + 1)}>+ Books</button> }
+//     { <button onClick={() => setCount(count - 1)}> - Books</button> }
+//     </div>
+//   );
+// }
 
-  
-      
-    </div>
-  );
-}
+// export default BookCounter;
 
-export default BookCounter;
+
