@@ -21,23 +21,32 @@ const Book = (props) => {
    
     
     return (
-        <div>
-            <h2>{title}</h2>
-            
-            <p>by {authors ? authors.join(', '): 'No Authors'}</p>
-            <p>£ {listPrice && listPrice.amount}</p>
-            <p>{description}</p>
-            <img src={smallThumbnail || thumbnail}/>
-            {props.addBook && (
-                <button 
-            onClick={() => props.addBook(title, id)} > Add </button>
+        <div className="books">
+            <div>
                 
-            )}
-            {props.removeBook && (
-                <button 
-                onClick={() => props.removeBook(id)}>Remove
-                </button>
-            )}
+                <h2 className="book-title">{title}</h2>
+                <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
+                <img src={smallThumbnail || thumbnail}/>
+                <p className="price"> £ {listPrice && listPrice.amount}</p>
+               
+            </div>
+          
+                {/* <img src={smallThumbnail || thumbnail}/> */}
+                <p>{description}</p>
+           
+            <div>
+                {props.addBook && (
+                    <button className="addbtn"
+                onClick={() => props.addBook(title, id)} > Add </button>
+                    
+                )}
+                {props.removeBook && (
+                    <button className="removebtn" 
+                    onClick={() => props.removeBook(id)}>Remove
+                    </button>
+                )}
+            </div>
+            
             
         </div>
     );

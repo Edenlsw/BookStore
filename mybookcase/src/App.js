@@ -76,9 +76,7 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
-        {/* <h3>Welcome to the BookCase</h3> */}
-            {/* <BookCounter library={{name:"Eden", theme:"Modern"}}/> */}
-        <BookList books={bookcase} removeBook={removeBook}/>
+                <BookList books={bookcase} removeBook={removeBook}/>
         {/* testing book count  */}
             
       
