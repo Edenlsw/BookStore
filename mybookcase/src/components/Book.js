@@ -21,18 +21,19 @@ const Book = (props) => {
    
     
     return (
+        
         <div className="books">
             <div>
                 
+                {/* <h2 className="book-title">{title}</h2> */}
+                <img className = "image" src={smallThumbnail || thumbnail}/>
                 <h2 className="book-title">{title}</h2>
                 <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
-                <img src={smallThumbnail || thumbnail}/>
                 <p className="price"> £ {listPrice && listPrice.amount}</p>
                
             </div>
           
-                {/* <img src={smallThumbnail || thumbnail}/> */}
-                <p>{description}</p>
+                <p className="description">{description}</p>
            
             <div>
                 {props.addBook && (
