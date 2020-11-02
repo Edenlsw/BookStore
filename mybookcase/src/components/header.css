@@ -1,6 +1,6 @@
  .header {
     background-color: #8bcdcd;
-    padding-top: 3px;
+    /* padding-top: 3px;  */
     padding-bottom: 10px;
     font-size: 20px;
     word-spacing: 30px;
@@ -20,6 +20,6 @@
 .title,
 .header {
     background-color: #FFFAF1;
-    padding-top: 15px;
-    margin-bottom: 10px;
+    padding-top: 2px;
+    margin-bottom: 15px;
 }

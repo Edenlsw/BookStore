@@ -35,33 +35,37 @@
  } 
 
 
-.search-form {
+/* .search-form {
     color: #8bcdcd;
-}
+} */
 
 
  
 
 
 /* button style */
-.addbtn{
+.addbtn {
     background-color: #e5edb7;
     color: #8bcdcd;
+    font-weight: bold;
+    text-transform: uppercase;
+    
 }
 
 .removebtn {
     background-color:#8bcdcd;
     color: #e5edb7;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .books {
     display: grid;
     grid-template-columns: 500px 700px 100px;
     margin: 60px 250px 100px 250px;
-    background-color: teal;
+    border-style: outset;
     outline: thick;
-    
-    
+    padding: 20px 5px 20px 10px;
 }
 
 *{
@@ -72,6 +76,7 @@
 .description {
     text-align: left;
     font-family: 'Anton', sans-serif;
+    
 }
 
 
@@ -81,8 +86,10 @@
 }
 
 .image {
-    margin: 0px 0 20px 0;
+    margin: 0px 0px 20px 0;
 }
+
+
 /* .books {
     display: flex;
      flex-wrap: wrap; 

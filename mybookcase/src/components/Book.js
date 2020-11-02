@@ -23,7 +23,7 @@ const Book = (props) => {
     return (
         
         <div className="books">
-            <div>
+            <div className="image-text">
                 
                 {/* <h2 className="book-title">{title}</h2> */}
                 <img className = "image" src={smallThumbnail || thumbnail}/>
