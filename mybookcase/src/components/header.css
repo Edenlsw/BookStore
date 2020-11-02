@@ -19,7 +19,16 @@
 .title-banner,
 .title,
 .header {
-    background-color: #FFFAF1;
+    background-color: #f4eeff;
     padding-top: 2px;
+    padding-bottom: 4px;
     margin-bottom: 15px;
+}
+
+.title {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.header {
+    margin-right: 20px;
 }

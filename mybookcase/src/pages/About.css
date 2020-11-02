@@ -65,12 +65,12 @@
     margin: 60px 250px 100px 250px;
     border-style: outset;
     outline: thick;
-    padding: 20px 5px 20px 10px;
+    padding: 35px 5px 20px 10px;
 }
 
 *{
     text-align: center;
-    background-color: #f1c5c5;
+    background-color: #dcd6f7;
 }
 
 .description {
@@ -79,10 +79,17 @@
     
 }
 
+.book-title,
+.authors,
+.price {
+    font-family: 'Anton', sans-serif;
+}
+
 
 .addbtn,
 .removebtn {
     margin-left: 100px;
+    padding-top: ;
 }
 
 .image {
