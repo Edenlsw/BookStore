@@ -1,101 +1,89 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
 
 /* .title-banner {
     background-color: white;
 } */
 
-
 .title-about {
-    color: black;
-    font-size: 30px;
-    font-family: 'Anton', sans-serif;
-    margin: 30px 0 0 0;
+  color: black;
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  margin: 30px 0 0 0;
 }
 
 .description-about {
-    /* margin: 50px 100px 50px 100px; */
-    margin: 60px 350px 100px 350px;
-    color: black;
-    font-size: 20px;
-    font-family: 'Anton', sans-serif;
-
+  /* margin: 50px 100px 50px 100px; */
+  margin: 60px 350px 100px 350px;
+  color: black;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
 }
 
 .eden {
-    text-decoration: underline;
-    font-weight: bolder;
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 .title {
-    text-decoration: underline;
-    color: black;
-    text-transform: uppercase;
-    margin: 30px 0 30px 0;
- } 
-
+  text-decoration: underline;
+  color: black;
+  text-transform: uppercase;
+  margin: 30px 0 30px 0;
+}
 
 /* .search-form {
     color: #8bcdcd;
 } */
 
-
- 
-
-
 /* button style */
 .addbtn {
-    background-color: #e5edb7;
-    color: #8bcdcd;
-    font-weight: bold;
-    text-transform: uppercase;
-    
+  background-color: #e5edb7;
+  color: #8bcdcd;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .removebtn {
-    background-color:#8bcdcd;
-    color: #e5edb7;
-    font-weight: bold;
-    text-transform: uppercase;
+  background-color: #8bcdcd;
+  color: #e5edb7;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .books {
-    display: grid;
-    grid-template-columns: 500px 700px 100px;
-    margin: 60px 250px 100px 250px;
-    border-style: outset;
-    outline: thick;
-    padding: 35px 5px 20px 10px;
+  display: grid;
+  grid-template-columns: 500px 700px 100px;
+  margin: 60px 250px 100px 250px;
+  border-style: outset;
+  outline: thick;
+  padding: 35px 5px 20px 10px;
 }
 
-*{
-    text-align: center;
-    background-color: #dcd6f7;
+* {
+  text-align: center;
+  background-color: #dcd6f7;
 }
 
 .description {
-    text-align: left;
-    font-family: 'Anton', sans-serif;
-    
+  text-align: left;
+  font-family: "Anton", sans-serif;
 }
 
 .book-title,
 .authors,
 .price {
-    font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-
 
 .addbtn,
 .removebtn {
-    margin-left: 100px;
-    padding-top: ;
+  margin-left: 100px;
+  padding-top: ;
 }
 
 .image {
-    margin: 0px 0px 20px 0;
+  margin: 0px 0px 20px 0;
 }
-
 
 /* .books {
     display: flex;
@@ -104,5 +92,3 @@
     margin: 60px 250px 0 250px;
     ;
 }  */
-
-
