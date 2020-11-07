@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Book from './components/Book';
+// import Book from './components/Book';
 import About from './pages/About';
 import data from './models/books.json';
 import Header from './components/Header';
@@ -21,7 +21,12 @@ const App = (props) => {
   const [ keyword, setKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
   const [count, setCount] = useState(0);
+  const paginate = pageNumber => setCurrentPage(pageNumber);
 
+
+
+          // <Pagination booksPerPage={booksPerPage} totalBooks={props.books.length} paginate={paginate}/> 
+          
   useEffect (() => {
     document.title = `${count} Book(s) Added To Bookcase`
   });
@@ -67,7 +72,10 @@ const App = (props) => {
       <React.Fragment>
         <Header/>
         <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} />
-        <BookList books={books} addBook={addBook}/>  
+        <BookList books={books} addBook={addBook} currentPage={currentPage}/> 
+
+        <Pagination booksPerPage={booksPerPage} totalBooks={books.length} paginate={paginate}/> 
+ 
       </React.Fragment>
     )} />
 
@@ -79,7 +87,7 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
-                <BookList books={bookcase} removeBook={removeBook}/>
+                <BookList books={bookcase} removeBook={removeBook} currentPage={currentPage}/>
         {/* testing book count  */}
             
       
