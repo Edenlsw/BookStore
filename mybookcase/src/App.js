@@ -8,12 +8,16 @@ import BookList  from './components/BookList.js';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Apps.css"
+import Pagination from './components/Pagination';
 // import BookCounter from './components/BookCounter';
 
 
 const App = (props) => {
 
   const [books, setBooks] = useState(data);
+  const [loading, setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1);
+  const [booksPerPage, setBooksPerPage] = useState(10);
   const [ keyword, setKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
   const [count, setCount] = useState(0);
@@ -43,11 +47,6 @@ const App = (props) => {
    
 
 
-//   useEffect (() => {
-//     document.title = bookcase.length === 0
-//         ? "Any Text here"
-//         : `Added ${bookcase.length}`;
-// });
 
     
 
