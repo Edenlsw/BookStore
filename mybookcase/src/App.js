@@ -72,7 +72,7 @@ const App = (props) => {
       <React.Fragment>
         <Header/>
         <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword} />
-        <BookList books={books} addBook={addBook} currentPage={currentPage}/> 
+        <BookList currentPage={currentPage} books={books} addBook={addBook} /> 
 
         <Pagination booksPerPage={booksPerPage} totalBooks={books.length} paginate={paginate}/> 
  
@@ -87,7 +87,7 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
-                <BookList books={bookcase} removeBook={removeBook} currentPage={currentPage}/>
+                <BookList currentPage={currentPage} books={bookcase} removeBook={removeBook} />
         {/* testing book count  */}
             
       
