@@ -16,7 +16,7 @@ function About () {
                 or description  
             </p>
         </div>
-    )
+    );
 
 };
 

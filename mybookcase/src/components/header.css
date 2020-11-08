@@ -16,14 +16,28 @@
 }  */
 
 
+/* .header {
+    text-align: center;
+    margin-left: 250px;
+} */
+
+
+.bootstrap-header{
+    background-color: yellow;
+}
+
 .title-banner,
 .title,
 .header {
     background-color: #f4eeff;
     padding-top: 2px;
     padding-bottom: 4px;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
+   
 }
+
+
+
 
 .title {
     font-family: 'Bowlby One SC', cursive;
