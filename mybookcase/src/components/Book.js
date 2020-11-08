@@ -27,7 +27,7 @@ const Book = (props) => {
                 
                 {/* <h2 className="book-title">{title}</h2> */}
                 <Container fluid="sm">
-
+                    
                     <Row className="book-title-row">
                         <h2 className="book-title">{title}</h2>
                     </Row>
@@ -61,10 +61,12 @@ const Book = (props) => {
 
                         </Col>
 
-
-                        <Col>
-                            <p className="description">{description}</p>
-                        </Col>
+                        <div>
+                            <Col className="single-descrip">
+                                <p className="description">{description}</p>
+                            </Col>
+                        </div>
+                        
                     </Row>
 
                     </Container>

@@ -17,7 +17,7 @@ const App = (props) => {
   const [books, setBooks] = useState(data);
   const [loading, setLoading] = useState(false)
   const [currentPage, setCurrentPage] = useState(1);
-  const [booksPerPage, setBooksPerPage] = useState(10);
+  const [booksPerPage, setBooksPerPage] = useState(6);
   const [ keyword, setKeyword] = useState('');
   const [bookcase, setBookcase] = useState([]);
   const [count, setCount] = useState(0);

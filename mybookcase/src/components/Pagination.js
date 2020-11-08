@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import { PageItem } from 'react-bootstrap';
+import "./Pagination.css"
+import "./Book.css"
 
 const Pagination = ({booksPerPage, totalBooks,paginate}) => {
     const pageNumbers =[];

@@ -17,26 +17,7 @@ const Header = () => {
 
                                     {/* BOOTSTRAP NAV */}
 
-
-                
-                              
-                {/* <container className="bootstrap-header">
-                    <Nav variant="pills" defaultActiveKey="/home">
-                        
-                        <Nav.Item className="header" >
-                            <Nav.Link href="/">BOOKS</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="header">
-                            <Nav.Link href="/bookcase">BOOKCASE</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="header">
-                            <Nav.Link href="/about">ABOUT</Nav.Link>
-                        </Nav.Item>
-                        </Nav>
-                
-                </container>      */}
-
-
+            
                  <Nav variant="pills" defaultActiveKey="/home" className="header" className="header">
                     
                     <Nav.Item className="header" >
