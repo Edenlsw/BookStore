@@ -25,26 +25,94 @@ const Book = (props) => {
             <div className="image-text">
                 
                 {/* <h2 className="book-title">{title}</h2> */}
-                <Container>
+                <Container fluid>
                     <Row>
-                        <h2 className="book-title">{title}</h2>
-                     
-                    </Row>
-                    <Row>
-                        
-                        <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
-                        
-                    </Row>
-                    <Row>
-                    
-                        <p className="price"> £ {listPrice && listPrice.amount}</p>
-                    </Row>
-                    <Row>
-                        <Col> 
+                        <Col>
+
+                            <Row>
+                                <h2 className="book-title">{title}</h2>
+
+                            </Row>
+                            <Row>
+                                
+                                <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
+                                
+                            </Row>
                             <Row>
                                 <img className = "image" src={smallThumbnail || thumbnail}/>
                             </Row>
                             <Row>
+
+                                <p className="price"> £ {listPrice && listPrice.amount}</p>
+                            </Row>
+
+                            <Row>
+                                {props.addBook && (
+                                            <button className="addbtn"
+                                        onClick={() => props.addBook(title, id)} > Add </button>
+                                            
+                                        )}
+                                        {props.removeBook && (
+                                            <button className="removebtn" 
+                                            onClick={() => props.removeBook(id)}>Remove
+                                            </button>
+                                        )}
+                                
+                            </Row>
+
+                            </Col>
+
+
+                            <Col>
+                            <p className="description">{description}</p>
+                        </Col>
+                    </Row>
+
+                    </Container>
+                    {/* <Col>
+
+                        <Row>
+                            <h2 className="book-title">{title}</h2>
+                        
+                        </Row>
+                        <Row>
+                            
+                            <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
+                            
+                        </Row>
+                        <Row>
+                            <img className = "image" src={smallThumbnail || thumbnail}/>
+                        </Row>
+                        <Row>
+                        
+                            <p className="price"> £ {listPrice && listPrice.amount}</p>
+                            {props.addBook && (
+                                        <button className="addbtn"
+                                    onClick={() => props.addBook(title, id)} > Add </button>
+                                        
+                                    )}
+                                    {props.removeBook && (
+                                        <button className="removebtn" 
+                                        onClick={() => props.removeBook(id)}>Remove
+                                        </button>
+                                    )}
+                            
+                        </Row>
+                    
+                    </Col>
+
+
+                    <Col>
+                        <p className="description">{description}</p>
+                    </Col> */}
+
+                    
+                    {/* <Row> */}
+                        {/* <Col> 
+                            <Row>
+                                <img className = "image" src={smallThumbnail || thumbnail}/>
+                            </Row> */}
+                            {/* <Row>
                                 {props.addBook && (
                                     <button className="addbtn"
                                 onClick={() => props.addBook(title, id)} > Add </button>
@@ -55,15 +123,17 @@ const Book = (props) => {
                                     onClick={() => props.removeBook(id)}>Remove
                                     </button>
                                 )}
-                            </Row>
+                    </Row> */}
                             
+                        {/* </Col> */}
+                        {/* <Col> 
+                        <p className="description">{description}</p>
                         </Col>
-                        <Col> <p className="description">{description}</p> </Col>
-                        <p className="price"> £ {listPrice && listPrice.amount}</p>
+                        
                         
 
                     </Row>
-                </Container>
+                </Container> */}
 
                 {/* <img className = "image" src={smallThumbnail || thumbnail}/>
                 <h2 className="book-title">{title}</h2>
@@ -84,7 +154,7 @@ const Book = (props) => {
                     <button className="removebtn" 
                     onClick={() => props.removeBook(id)}>Remove
                     </button> */}
-                )}
+                {/* )} */}
             </div>
             
             
