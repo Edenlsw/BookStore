@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import App from '../App';
+import "../components/Book.css"
 
 
 
@@ -25,19 +26,17 @@ const Book = (props) => {
             <div className="image-text">
                 
                 {/* <h2 className="book-title">{title}</h2> */}
-                <Container fluid>
+                <Container fluid="sm">
+
+                    <Row className="book-title-row">
+                        <h2 className="book-title">{title}</h2>
+                    </Row>
+                    <Row className="authors-row">
+                        <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
+                    </Row>                 
                     <Row>
-                        <Col>
+                        <Col className="non-text">
 
-                            <Row>
-                                <h2 className="book-title">{title}</h2>
-
-                            </Row>
-                            <Row>
-                                
-                                <p className="authors"> by {authors ? authors.join(', '): 'No Authors'}</p>
-                                
-                            </Row>
                             <Row>
                                 <img className = "image" src={smallThumbnail || thumbnail}/>
                             </Row>
@@ -46,7 +45,7 @@ const Book = (props) => {
                                 <p className="price"> £ {listPrice && listPrice.amount}</p>
                             </Row>
 
-                            <Row>
+                            <Row >
                                 {props.addBook && (
                                             <button className="addbtn"
                                         onClick={() => props.addBook(title, id)} > Add </button>
@@ -60,10 +59,10 @@ const Book = (props) => {
                                 
                             </Row>
 
-                            </Col>
+                        </Col>
 
 
-                            <Col>
+                        <Col>
                             <p className="description">{description}</p>
                         </Col>
                     </Row>
@@ -227,38 +226,6 @@ Book.propTypes = {
     })
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 export default Book;
