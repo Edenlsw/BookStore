@@ -2,7 +2,8 @@
     .col-xs {
         width: 40%;
     } 
-    .description {
+    .books {
+        margin-left: 20px;
         
     }
 } 
@@ -35,7 +36,7 @@
 } */
 
 .books {
-    margin: 100px 0 200px 500px;
+    margin: 100px 0 200px 250px;
     border-style: double;
     width: 1000px;
     justify-content: center;

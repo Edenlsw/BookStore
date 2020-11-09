@@ -18,7 +18,7 @@ const Header = () => {
                                     {/* BOOTSTRAP NAV */}
 
             
-                 <Nav variant="pills" defaultActiveKey="/home" className="header" className="header">
+                 {/* <Nav variant="pills" defaultActiveKey="/home" className="header" className="header">
                     
                     <Nav.Item className="header" >
                         <Nav.Link href="/">BOOKS</Nav.Link>
@@ -29,7 +29,7 @@ const Header = () => {
                     <Nav.Item className="header">
                         <Nav.Link href="/about">ABOUT</Nav.Link>
                     </Nav.Item>
-                    </Nav> 
+                    </Nav>  */}
 
 
                                             {/* OLD NAV */}

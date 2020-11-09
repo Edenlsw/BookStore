@@ -1,12 +1,15 @@
  .header {
-    background-color: #8bcdcd;
+    /* background-color: #8bcdcd; */
     /* padding-top: 3px;  */
     padding-bottom: 10px;
     font-size: 20px;
     word-spacing: 30px;
     font-family: 'Anton', sans-serif;
+    margin-top: 20px;
 } 
-
+.header {
+    word-spacing: 100px;
+}
 /* .title {
     text-decoration: underline;
     color: black;
@@ -26,6 +29,9 @@
     background-color: yellow;
 }
 
+.title-banner {
+    width: 100%;
+}
 .title-banner,
 .title,
 .header {
@@ -37,6 +43,11 @@
 }
 
 
+.bookLink {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
 
 
 .title {
@@ -44,5 +55,5 @@
 }
 
 .header {
-    margin-right: 20px;
+    word-spacing: 100%;
 }
