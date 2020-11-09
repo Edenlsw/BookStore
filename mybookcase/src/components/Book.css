@@ -48,6 +48,17 @@
 }
 
 
+.price {
+    
+}
+
+.book-title-row,
+.authors-row {
+    justify-content: center;
+}
+
+
+
 
 .book-title{
     text-align: center;

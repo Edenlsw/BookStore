@@ -39,6 +39,7 @@ const Book = (props) => {
 
                             <Row>
                                 <img className = "image" src={smallThumbnail || thumbnail}/>
+                                
                             </Row>
                             <Row>
 
@@ -46,6 +47,7 @@ const Book = (props) => {
                             </Row>
 
                             <Row >
+                                {/* <p className="price"> £ {listPrice && listPrice.amount}</p> */}
                                 {props.addBook && (
                                             <button className="addbtn"
                                         onClick={() => props.addBook(title, id)} > Add </button>
