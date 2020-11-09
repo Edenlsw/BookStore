@@ -27,6 +27,10 @@
 
 }
 
+/* search bar */
+.search-form {
+    margin-top: 20px;
+}
 /* .description.a {
     word-wrap: break-word;
     overflow: scroll;
@@ -36,7 +40,7 @@
 } */
 
 .books {
-    margin: 100px 0 200px 250px;
+    margin: 100px 0 200px 450px;
     border-style: double;
     width: 1000px;
     justify-content: center;
