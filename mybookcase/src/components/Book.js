@@ -61,11 +61,11 @@ const Book = (props) => {
 
                         </Col>
 
-            <div>
-                            <Col className="single-description" sm={8}>
-                                <p className="description">{description}</p>
-                            </Col>
-            </div>
+            
+                        <Col className="single-description" sm={8}>
+                            <p className="description">{description}</p>
+                        </Col>
+            
                         
                     </Row>
 
