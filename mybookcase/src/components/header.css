@@ -1,6 +1,5 @@
  .header {
-    /* background-color: #8bcdcd; */
-    /* padding-top: 3px;  */
+    
     padding-bottom: 10px;
     font-size: 20px;
     word-spacing: 30px;
@@ -10,21 +9,6 @@
 .header {
     word-spacing: 100px;
 }
-/* .title {
-    text-decoration: underline;
-    color: black;
-    text-transform: uppercase;
-    margin: 30px 0 30px 0;
-    background-color: #8bcdcd;
-}  */
-
-
-
-
-/* .header {
-    text-align: center;
-    margin-left: 250px;
-} */
 
 
 

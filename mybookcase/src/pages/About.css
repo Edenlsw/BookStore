@@ -24,10 +24,6 @@
   
 }
 
-.title-banner {
-  width: 100%;
-}
-
 
 .title-about {
   color: black;
@@ -56,9 +52,7 @@
   margin: 30px 0 30px 0;
 } */
 
-/* .search-form {
-    color: #8bcdcd;
-} */
+
 
 /* button style */
 .addbtn {
@@ -99,14 +93,4 @@
   padding-top: ;
 }
 
-/* .image {
-  margin: 0px 0px 20px 0;
-} */
 
-/* .books {
-    display: flex;
-     flex-wrap: wrap; 
-     margin-top: 60px; 
-    margin: 60px 250px 0 250px;
-    ;
-}  */
