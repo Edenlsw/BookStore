@@ -1,24 +1,24 @@
-import React, {Fragment} from 'react';
-import ReactDOM from 'react-dom';
-import books from './books.json';
+// import React, {Fragment} from 'react';
+// import ReactDOM from 'react-dom';
+// import books from './books.json';
 
-const formatter = new Intl.NumberFormat('en-GB', {
-style: 'currency',
-currency: 'GBP'
-})
+// const formatter = new Intl.NumberFormat('en-GB', {
+// style: 'currency',
+// currency: 'GBP'
+// })
 
 
-const element = <Fragment>
+// const element = <Fragment>
   
-  {books.map((book) => {
-    let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice} }= book;
-    return (<div>
-      <p>{title}, {authors}</p>
-      </div>)
-  })}
-</Fragment>;
+//   {books.map((book) => {
+//     let {id, volumeInfo: {title, authors, description}, saleInfo: {listPrice} }= book;
+//     return (<div>
+//       <p>{title}, {authors}</p>
+//       </div>)
+//   })}
+// </Fragment>;
 
-ReactDOM.render(element,document.getElementById('root'));
+// ReactDOM.render(element,document.getElementById('root'));
 
 
 
@@ -106,14 +106,14 @@ ReactDOM.render(element,document.getElementById('root'));
 
 
 
-// import React, {Fragment} from 'react';
-// import ReactDOM from 'react-dom';
-// import BookCounter from './BookCounter';
-// const element = <Fragment>
-// <h1>Welcome to My Library</h1>
-// <BookCounter library={{name:"Sarah",theme:"Modern"}}/>
-// </Fragment>;
-// ReactDOM.render(element,document.getElementById('root'));
+import React, {Fragment} from 'react';
+import ReactDOM from 'react-dom';
+import BookCounter from './BookCounter';
+const element = <Fragment>
+<h1>Welcome to My Library</h1>
+<BookCounter library={{name:"Eden",theme:"Modern"}}/>
+</Fragment>;
+ReactDOM.render(element,document.getElementById('root'));
 
 
 

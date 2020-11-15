@@ -1,13 +1,177 @@
+/* MEDIA QUERIES */
+
+
+
+
+
+
 /* HEADER */
 
 
+.header {
+
+    padding-bottom: 10px;
+    font-size: 20px;
+    word-spacing: 500px;
+    font-family: 'Anton', sans-serif;
+    margin-top: 20px;
+} 
+
+.title-banner {
+    width: 100%;
+}
+
+
+.title-banner,
+.title,
+.header {
+    background-color: #f4eeff;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    margin-bottom: 2px;
+   
+}
+
+
+.bookLink {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+
+.title {
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.header {
+    word-spacing: 100%;
+}
 
 
 /* ABOUT PAGE */
 
+.title-banner {
+    width: 100%;
+  }
+  
+  
+  .title-about {
+    color: black;
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    margin: 30px 0 0 0;
+  }
+  
+  .description-about {
+    margin: 50px 100px 50px 100px;
+    
+    color: black;
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+  }
+  
+  .eden {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+  
+  .title {
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+    margin: 30px 0 30px 0;
+  } */
+  
+ 
+  
+  /* button style */
+  .addbtn {
+    background-color: #e5edb7;
+    color: #8bcdcd;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .removebtn {
+    background-color: #8bcdcd;
+    color: #e5edb7;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  * {
+    text-align: center;
+    background-color: #dcd6f7;
+  }
+  
+  .description {
+    text-align: center;
+    font-family: "Anton", sans-serif;
+  }
+  
+  .book-title,
+  .authors,
+  .price {
+    font-family: "Anton", sans-serif;
+  }
+  
+  .addbtn,
+  .removebtn {
+    margin-left: 40px;
+    padding-top: ;
+  }
+  
+  
+  
+
+
 
 
 /* BOOKS */
+
+
+.description {
+    width: 600px; 
+    height: 200px;
+    border: 0.5px solid #000000;
+    padding: 15px;
+    text-align: left;
+    /* overflow-x: hidden; Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+
+.search-form {
+    margin-top: 20px;
+}
+
+.books {
+    margin: 100px 0 200px 450px;
+    border-style: double;
+    width: 1000px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.book-title-row,
+.authors-row {
+    justify-content: center;
+}
+
+.book-title{
+    text-align: center;
+}
+
+.single-description {
+    justify-content: center;
+}
+
+
+
+
 
 
 /* PAGINATION  */

@@ -19,18 +19,17 @@
 }  */
 
 
+
+
 /* .header {
     text-align: center;
     margin-left: 250px;
 } */
 
 
-.bootstrap-header{
-    background-color: yellow;
-}
 
 .title-banner {
-    width: 100%;
+    width: 100vw;
 }
 .title-banner,
 .title,
