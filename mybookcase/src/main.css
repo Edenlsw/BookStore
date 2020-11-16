@@ -76,72 +76,69 @@
     font-weight: bolder;
   }
   
-  .title {
-    text-decoration: underline;
-    color: black;
-    text-transform: uppercase;
-    margin: 30px 0 30px 0;
-  } */
   
- 
-  
-  /* button style */
-  .addbtn {
-    background-color: #e5edb7;
-    color: #8bcdcd;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .removebtn {
-    background-color: #8bcdcd;
-    color: #e5edb7;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  
-  
-  * {
-    text-align: center;
-    background-color: #dcd6f7;
-  }
-  
-  .description {
-    text-align: center;
-    font-family: "Anton", sans-serif;
-  }
-  
-  .book-title,
-  .authors,
-  .price {
-    font-family: "Anton", sans-serif;
-  }
-  
-  .addbtn,
-  .removebtn {
-    margin-left: 40px;
-    padding-top: 3px;
-  }
-  
-  
-  
-
-
-
 
 /* BOOKS */
 
+.books{
+  margin-top: 50px;
+}
+
+.title {
+  text-decoration: underline;
+  color: black;
+  text-transform: uppercase;
+  margin: 30px 0 30px 0;
+} 
+
+
+
+/* button style */
+.addbtn {
+  background-color: #e5edb7;
+  color: #8bcdcd;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.removebtn {
+  background-color: #8bcdcd;
+  color: #e5edb7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* BACKGROUND  */
+* {
+  text-align: center;
+  background-color: #dcd6f7;
+}
+
+
+.book-title,
+.authors,
+.price {
+  font-family: "Anton", sans-serif;
+}
+
+.addbtn,
+.removebtn {
+  margin-left: 40px;
+  padding-top: 3px;
+}
+
 
 .description {
-    width: 300px; 
+    width: 280px; 
     height: 200px;
     border: 0.5px solid #000000;
     padding: 15px;
     text-align: left;
+    font-family: "Anton", sans-serif;
     /* overflow-x: hidden; Hide horizontal scrollbar */
     overflow-y: scroll; /* Add vertical scrollbar */
-    margin: 20px 0 5px 0;
+    /* margin: 20px 0 5px 0; */
 }
 
 
@@ -150,7 +147,7 @@
 }
 
 .books {
-  margin-left: 20px;
+  margin-left: 10px;
     /* margin: 100px 0 200px 450px; */
     /* border-style: double; */
     /* width: 1000px;
