@@ -7,7 +7,7 @@ import Header from './components/Header';
 import BookList  from './components/BookList.js';
 import Search from './components/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Apps.css"
+// import "./Apps.css"
 import Pagination from './components/Pagination';
 // import BookCounter from './components/BookCounter';
 

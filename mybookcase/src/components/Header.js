@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import './header.css';
+// import './header.css';
+import '../main.css';
 
 
 

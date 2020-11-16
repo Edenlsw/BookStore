@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import App from '../App';
-import "../components/Book.css"
+// import "../components/Book.css";
+import '../main.css';
 
 
 
