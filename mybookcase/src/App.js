@@ -87,6 +87,7 @@ const App = (props) => {
     exact path="/bookcase" render={() => (
       <React.Fragment>
         <Header/>
+                <p className="countText"> {count} book(s) have been added</p>
                 <BookList currentPage={currentPage} books={bookcase} removeBook={removeBook} />
         {/* testing book count  */}
             
