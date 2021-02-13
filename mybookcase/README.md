@@ -1,9 +1,9 @@
 
-<h1 align="center">THE BOOKSTORE</h1>
+<h1 align="center">THE BOOKCASE</h1>
 
-<h3>THE BOOKSTORE</h3>
+<h3>THE BOOKCASE</h3>
 
-<h4>The premise of this project was to create a bookstore which allows users to search and filter through a list of books along with adding and deleting the books from their library. 
+<h4>The premise of this project was to create a bookcase which allows users to search and filter through a list of books along with adding and deleting the books from their library. 
 
 The main data was loaded using a JSON however a google books api was added allowing the user to search for extra books not listed in the original JSON file. 
  </h4>
